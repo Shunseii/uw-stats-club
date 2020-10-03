@@ -9,3 +9,6 @@ Clone the repo and run the following command to build the project and start a de
 ```sh
 npm run develop
 ```
+
+### Trello
+Link to Trello: https://trello.com/b/xMabT3Le/uw-stats-club-website
