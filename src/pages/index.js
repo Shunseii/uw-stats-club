@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "../components/Navbar.jsx";
 
 const IndexPage = () => {
-  return <h1>Hello World!</h1>;
+  return (
+    <div>
+      <Navbar />
+      <main className="px-80">Home Page</main>
+    </div>
+  );
 };
 
 export default IndexPage;
