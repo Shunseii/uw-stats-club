@@ -1,4 +1,5 @@
 // See https://tailwindcss.com/docs/configuration for details
+// prettier-ignore
 module.exports = {
   purge: ["./src/**/*.jsx", "./src/**/*.js"],
   theme: {
