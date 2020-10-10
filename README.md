@@ -21,5 +21,7 @@ Build the project and start a dev server:
 npm run develop
 ```
 
+Server should be running on localhost:8000.
+
 ### Trello
 Link to Trello: https://trello.com/b/xMabT3Le/uw-stats-club-website
