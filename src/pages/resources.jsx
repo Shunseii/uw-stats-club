@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar.jsx";
 const ResourcesPage = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar active="Resources" />
       <main className="px-80">Resources Page</main>
     </div>
   );
