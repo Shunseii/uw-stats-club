@@ -1,38 +1,38 @@
 import React from "react";
-import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
-const Navbar = () => {
+import NavbarLink from "./Navbar-Link.jsx";
+
+import SigmaIcon from "../images/sigma.svg";
+
+const Navbar = ({ active }) => {
   return (
     <nav className="flex flex-col px-48 pb-16 pt-12">
       <div className="flex flex-row justify-between">
         <div className="flex flex-row items-center">
-          <img className="mr-6" alt="Sigma Icon" />
+          <img className="w-3/25 mr-6" src={SigmaIcon} alt="Sigma Icon" />
 
           <div className="flex flex-col">
             <h3 className="text-lg">University of Waterloo</h3>
-            <h1 className="font-medium text-2xl">Statistics Club</h1>
+            <h1 className="font-medium text-3xl">Statistics Club</h1>
           </div>
         </div>
 
         <ul className="flex items-center w-1/4 justify-between">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/events">Events</Link>
-          </li>
-          <li>
-            <Link to="/resources">Resources</Link>
-          </li>
+          <NavbarLink active={active} name="Home" to="/" />
+          <NavbarLink active={active} name="About" to="/about" />
+          <NavbarLink active={active} name="Events" to="/events" />
+          <NavbarLink active={active} name="Resources" to="/resources" />
         </ul>
       </div>
 
       <br />
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  active: PropTypes.string
 };
 
 export default Navbar;
