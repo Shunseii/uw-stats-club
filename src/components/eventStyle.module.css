@@ -1,0 +1,19 @@
+.container {
+	margin: 3rem auto;
+	max-width: 950px;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 2%;
+}
+
+ul {
+	font-size: 20px;
+}
+
+p {
+	margin-top: 1%;
+	padding-top: 1%;
+}
