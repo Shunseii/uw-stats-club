@@ -13,7 +13,7 @@ const Navbar = ({ active }) => {
 
           <div className="flex flex-col justify-center">
             {/* Mobile Display */}
-            <h3 className="block lg:hidden text-lg">UW</h3>
+            <h3 className="block lg:hidden text-lg -mb-2">UW</h3>
             <h1 className="block lg:hidden font-medium text-3xl">SC</h1>
 
             {/* Desktop Display */}
