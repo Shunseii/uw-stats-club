@@ -1,26 +1,22 @@
-.container {
-	display: inline-block;
-	width: 300px;
-	float: left;
-}
+/* Deprecated */
 
-h3 {
-	font-size: 20px;
-}
+/* h3 {
+  font-size: 20px;
+} */
 
-h4 {
-	font-size: 25px;
-	font-weight: bold;
-}
+/* h4 {
+  font-size: 25px;
+  font-weight: bold;
+} */
 
-.imgContainer {
-	position: relative;
-	display: inline-block;
-	padding: 25px;
-}
+/* .imgContainer {
+  position: relative;
+  display: inline-block;
+  padding: 25px;
+} */
 
-img {
-	border-radius: 50%;
-	height: 150px;
-	width: 150px
-}
+/* img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+} */
