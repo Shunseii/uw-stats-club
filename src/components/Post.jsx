@@ -1,19 +1,21 @@
-import React from 'react'
-import propTypes from 'prop-types'
-import postStyle from './postStyle.module.css'
+import React from "react";
+import PropTypes from "prop-types";
 
-const Post = (props) => {
-	return (
-		<div className={postStyle.container}>
-			<h2 className={postStyle.h2}>{props.title}</h2>
-			{props.children}
-		</div>
-	);
+const Post = ({ children, title }) => {
+  return (
+    <div>
+      <h2 className="text-3xl font-medium mb-2">{title}</h2>
+      {children}
+    </div>
+  );
 };
 
 Post.propTypes = {
-	children: propTypes.element,
-	title: propTypes.string
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]),
+  title: PropTypes.string
 };
 
 export default Post;

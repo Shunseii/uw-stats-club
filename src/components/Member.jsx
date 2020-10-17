@@ -1,20 +1,18 @@
-import React from 'react'
-import propTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-const Member = ({ name, position, src }) => {
-	return (
-		<div>
-			<h3>{name}</h3>
-			<img src={src}></img>
-			<h4>{position}</h4>
-		</div>
-	);
-}
+const Member = ({ name, src }) => {
+  return (
+    <div className="flex flex-col items-center">
+      <img className="rounded-full w-32" src={src}></img>
+      <h3 className="text-xl font-semibold">{name}</h3>
+    </div>
+  );
+};
 
 Member.propTypes = {
-	name: propTypes.string,
-	position: propTypes.string,
-	src: propTypes.string
-}
+  name: PropTypes.string,
+  src: PropTypes.string
+};
 
 export default Member;
