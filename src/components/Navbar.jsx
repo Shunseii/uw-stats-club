@@ -17,7 +17,9 @@ const Navbar = ({ active }) => {
             <h1 className="block lg:hidden font-medium text-3xl">SC</h1>
 
             {/* Desktop Display */}
-            <h3 className="hidden lg:block text-lg">University of Waterloo</h3>
+            <h3 className="hidden lg:block text-lg -mb-2">
+              University of Waterloo
+            </h3>
             <h1 className="hidden lg:block font-medium text-3xl">
               Statistics Club
             </h1>
