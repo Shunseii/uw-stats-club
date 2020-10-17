@@ -1,11 +1,13 @@
 import React from "react";
+
 import Navbar from "../components/Navbar.jsx";
+import Container from "../components/Container.jsx";
 
 const ResourcesPage = () => {
   return (
     <div>
       <Navbar active="Resources" />
-      <main className="px-80">Resources Page</main>
+      <Container>Resources Page</Container>
     </div>
   );
 };
