@@ -1,10 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import NavbarLink from "./Navbar-Link.jsx";
 import SigmaIcon from "../images/sigma.svg";
 
-const Navbar = ({ active }) => {
+const Navbar = () => {
   return (
     <nav className="mb-16 mt-12 w-9/12 mx-auto">
       <div className="flex flex-col md:flex-row justify-between w-full">
@@ -35,22 +34,18 @@ const Navbar = ({ active }) => {
         </div>
 
         <ul className="flex flex-row items-center justify-between">
-          <NavbarLink active={active} name="Home" to="/" />
+          <NavbarLink name="Home" to="/" />
           <span className="text-xs font-light">•</span>
-          <NavbarLink active={active} name="About" to="/about" />
+          <NavbarLink name="About" to="/about" />
           <span className="text-xs font-light">•</span>
-          <NavbarLink active={active} name="Events" to="/events" />
+          <NavbarLink name="Events" to="/events" />
           <span className="text-xs font-light">•</span>
-          <NavbarLink active={active} name="Resources" to="/resources" />
+          <NavbarLink name="Resources" to="/resources" />
         </ul>
       </div>
       <hr className="mt-6 border-black" />
     </nav>
   );
-};
-
-Navbar.propTypes = {
-  active: PropTypes.string
 };
 
 export default Navbar;

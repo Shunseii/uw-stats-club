@@ -10,7 +10,7 @@ import Footer from "../components/Footer.jsx";
 const AboutPage = () => {
   return (
     <div className="relative pb-16">
-      <Navbar active="About" />
+      <Navbar />
       <Container>
         <section className="mb-10">
           <Header title="UW Statistics Club" />

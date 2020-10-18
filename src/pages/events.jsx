@@ -9,7 +9,7 @@ import Footer from "../components/Footer.jsx";
 const EventsPage = () => {
   return (
     <div className="relative pb-12">
-      <Navbar active="Events" />
+      <Navbar />
       <Container>
         <section className="mb-16">
           <Header title="Upcoming Events" />
