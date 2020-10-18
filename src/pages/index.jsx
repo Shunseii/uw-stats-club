@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar.jsx";
 import Header from "../components/Header.jsx";
 import Post from "../components/Post.jsx";
 import Container from "../components/Container.jsx";
+import Footer from "../components/Footer.jsx";
 
 const IndexPage = () => {
   return (
@@ -42,6 +43,7 @@ const IndexPage = () => {
           <Header title="Current Club Events" />
         </div>
       </Container>
+      <Footer />
     </div>
   );
 };

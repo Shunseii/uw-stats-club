@@ -5,10 +5,11 @@ import Header from "../components/Header.jsx";
 import Post from "../components/Post.jsx";
 import Members from "../components/Members.jsx";
 import Container from "../components/Container.jsx";
+import Footer from "../components/Footer.jsx";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="relative pb-16">
       <Navbar active="About" />
       <Container>
         <section className="mb-10">
@@ -49,6 +50,7 @@ const AboutPage = () => {
           <Members />
         </section>
       </Container>
+      <Footer />
     </div>
   );
 };

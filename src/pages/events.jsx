@@ -4,10 +4,11 @@ import Navbar from "../components/Navbar.jsx";
 import Header from "../components/Header.jsx";
 import Event from "../components/Event.jsx";
 import Container from "../components/Container.jsx";
+import Footer from "../components/Footer.jsx";
 
 const EventsPage = () => {
   return (
-    <div>
+    <div className="relative pb-12">
       <Navbar active="Events" />
       <Container>
         <section className="mb-16">
@@ -95,6 +96,7 @@ const EventsPage = () => {
           </Event>
         </section>
       </Container>
+      <Footer />
     </div>
   );
 };
