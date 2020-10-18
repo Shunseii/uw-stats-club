@@ -8,7 +8,7 @@ import Footer from "../components/Footer.jsx";
 
 const IndexPage = () => {
   return (
-    <div>
+    <div className="relative pb-12 md:static md:pb-0">
       <Navbar active="Home" />
       <Container>
         <div className="pb-10">

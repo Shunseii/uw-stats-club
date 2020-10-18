@@ -2,7 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Header = ({ title }) => {
-  return <h1 className="text-4xl text-center font-medium mb-8">{title}</h1>;
+  return (
+    <div className="mb-8">
+      <h1 className="text-4xl text-center font-medium">{title}</h1>
+      {/* <hr className="bg-black w-4/5 mx-auto" /> */}
+    </div>
+  );
 };
 
 Header.propTypes = {
