@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        "3/25": "12%"
+        "3/25": "12%",
+        "fit": "fit-content"
       },
       padding: {
         "80": "20rem",
