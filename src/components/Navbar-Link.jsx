@@ -6,7 +6,7 @@ const NavbarLink = ({ active, name, to }) => {
   return (
     <li className="px-3">
       <Link
-        className={`text-2xl pb-1 ${
+        className={`text-md md:text-2xl pb-1 ${
           active === name ? "border-b border-black" : "font-light"
         }`}
         to={to}

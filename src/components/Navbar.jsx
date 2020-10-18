@@ -7,32 +7,40 @@ import SigmaIcon from "../images/sigma.svg";
 const Navbar = ({ active }) => {
   return (
     <nav className="mb-16 mt-12 w-9/12 mx-auto">
-      <div className="flex flex-row justify-between w-full">
-        <div className="flex flex-row">
-          <img className="w-12 mr-6" src={SigmaIcon} alt="Sigma Icon" />
+      <div className="flex flex-col md:flex-row justify-between w-full">
+        <div className="flex flex-row self-center mb-4 md:mb-0 md:self-baseline">
+          <img
+            className="w-8 mr-3 md:w-12 md:mr-6"
+            src={SigmaIcon}
+            alt="Sigma Icon"
+          />
 
           <div className="flex flex-col justify-center">
             {/* Mobile Display */}
-            <h3 className="block lg:hidden text-lg -mb-2">UW</h3>
-            <h1 className="block lg:hidden font-medium text-3xl">SC</h1>
+            <h3 className="md:block hidden lg:hidden text-sm md:text-lg -mb-2">
+              UW
+            </h3>
+            <h1 className="md:block hidden lg:hidden font-medium text-xl md:text-3xl">
+              SC
+            </h1>
 
             {/* Desktop Display */}
-            <h3 className="hidden lg:block text-lg -mb-2">
+            <h3 className="md:hidden block lg:block text-xs lg:text-lg -mb-2">
               University of Waterloo
             </h3>
-            <h1 className="hidden lg:block font-medium text-3xl">
+            <h1 className="md:hidden block lg:block font-medium text-xl lg:text-3xl">
               Statistics Club
             </h1>
           </div>
         </div>
 
-        <ul className="flex flex-col md:flex-row items-center justify-between">
+        <ul className="flex flex-row items-center justify-between">
           <NavbarLink active={active} name="Home" to="/" />
-          <span className="hidden md:block text-xs font-light">•</span>
+          <span className="text-xs font-light">•</span>
           <NavbarLink active={active} name="About" to="/about" />
-          <span className="hidden md:block text-xs font-light">•</span>
+          <span className="text-xs font-light">•</span>
           <NavbarLink active={active} name="Events" to="/events" />
-          <span className="hidden md:block text-xs font-light">•</span>
+          <span className="text-xs font-light">•</span>
           <NavbarLink active={active} name="Resources" to="/resources" />
         </ul>
       </div>
